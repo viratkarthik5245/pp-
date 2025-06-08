@@ -197,7 +197,7 @@ const HomePage = () => {
       </a>
     </Button>
     <Button size="lg" className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white shadow-lg" asChild>
-      <a href="https://t.me/UrExamBuddy" target="_blank" rel="noopener noreferrer">
+      <a href="https://t.me/+Zo5445Vw6hIxYmQ1" target="_blank" rel="noopener noreferrer">
         <Send className="mr-2 h-5 w-5" /> Join Telegram
       </a>
     </Button>
