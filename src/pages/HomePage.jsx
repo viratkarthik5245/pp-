@@ -7,11 +7,32 @@ import { Briefcase, Users, Star, MessageSquare as MessageSquareText, FileText, A
 
 const HomePage = () => {
   const services = [
-    { title: 'Daily Job Updates', description: 'Fresh job listings everyday, curated for you.', icon: <Briefcase className="h-8 w-8 text-primary" />, link: '/jobs' },
-    { title: 'Assessment Prep', description: 'Practice tests and materials for company assessments.', icon: <FileText className="h-8 w-8 text-primary" />, link: '/services#assessment-prep' },
-    { title: 'Interview Coaching', description: 'Mock interviews and expert feedback to ace your interviews.', icon: <MessageSquareText className="h-8 w-8 text-primary" />, link: '/mock-interview' },
-    { title: 'Resume Building', description: 'Craft a standout resume that gets noticed by recruiters.', icon: <Award className="h-8 w-8 text-primary" />, link: '/services#resume-help' },
-  ];
+  {
+    title: 'Daily Job Updates',
+    description: 'Fresh job listings everyday, curated for you.',
+    icon: <Briefcase className="h-8 w-8 text-primary" />,
+    link: 'https://whatsapp.com/channel/0029VayCVbU7j6g4jtGu3F1Y' // ✅ Changed from '/jobs' to WhatsApp link
+  },
+  {
+    title: 'Assessment Prep',
+    description: 'Practice tests and materials for company assessments.',
+    icon: <FileText className="h-8 w-8 text-primary" />,
+    link: '/services#assessment-prep'
+  },
+  {
+    title: 'Interview Coaching',
+    description: 'Mock interviews and expert feedback to ace your interviews.',
+    icon: <MessageSquareText className="h-8 w-8 text-primary" />,
+    link: '/mock-interview'
+  },
+  {
+    title: 'Resume Building',
+    description: 'Craft a standout resume that gets noticed by recruiters.',
+    icon: <Award className="h-8 w-8 text-primary" />,
+    link: '/services#resume-help'
+  }
+];
+
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -150,38 +171,39 @@ const HomePage = () => {
           <blockquote className="text-lg italic mb-6 max-w-2xl mx-auto">
             "Thanks to PrimoJobs, I landed my dream role at a top MNC! The mock interviews were incredibly helpful."
           </blockquote>
-          <p className="font-semibold">- Priya S., Software Engineer</p>
+          <p className="font-semibold">- Worthyonee </p>
           <Button variant="outline" className="mt-8 border-white text-white hover:bg-white hover:text-cyan-600" asChild>
-            <Link to="/success-stories">Read More Success Stories</Link>
+            <Link to="https://whatsapp.com/channel/0029VayCVbU7j6g4jtGu3F1Y">Read More Success Stories</Link>
           </Button>
         </div>
       </motion.section>
 
-      {/* Join Community Section */}
-      <motion.section 
-        className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeIn}
-      >
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Join Our Growing Community</h2>
-        <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Connect with fellow job seekers, get instant updates, and share your journey.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white shadow-lg" asChild>
-            <a href="YOUR_WHATSAPP_LINK_HERE" target="_blank" rel="noopener noreferrer">
-              <MessageSquareText className="mr-2 h-5 w-5" /> Join WhatsApp
-            </a>
-          </Button>
-          <Button size="lg" className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white shadow-lg" asChild>
-            <a href="YOUR_TELEGRAM_LINK_HERE" target="_blank" rel="noopener noreferrer">
-              <Send className="mr-2 h-5 w-5" /> Join Telegram
-            </a>
-          </Button>
-        </div>
-      </motion.section>
+     {/* Join Community Section */}
+<motion.section 
+  className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
+  variants={fadeIn}
+>
+  <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Join Our Growing Community</h2>
+  <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+    Connect with fellow job seekers, get instant updates, and share your journey.
+  </p>
+  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <Button size="lg" className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white shadow-lg" asChild>
+      <a href="https://whatsapp.com/channel/0029VayCVbU7j6g4jtGu3F1Y" target="_blank" rel="noopener noreferrer">
+        <MessageSquareText className="mr-2 h-5 w-5" /> Join WhatsApp
+      </a>
+    </Button>
+    <Button size="lg" className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white shadow-lg" asChild>
+      <a href="https://t.me/UrExamBuddy" target="_blank" rel="noopener noreferrer">
+        <Send className="mr-2 h-5 w-5" /> Join Telegram
+      </a>
+    </Button>
+  </div>
+</motion.section>
+
     </div>
   );
 };

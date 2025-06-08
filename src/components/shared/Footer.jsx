@@ -26,7 +26,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/jobs" className="hover:text-primary transition-colors">Find Jobs</Link></li>
               {/* Add other relevant links if any, e.g., About Us, Contact (if kept) */}
-              <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li> 
+              <li><Link to="https://whatsapp.com/channel/0029VayCVbU7j6g4jtGu3F1Y" className="hover:text-primary transition-colors">Contact Us</Link></li> 
             </ul>
           </div>
           

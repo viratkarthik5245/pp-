@@ -9,15 +9,15 @@ import { motion } from 'framer-motion';
 
 // Enhanced job listings with applyLink and placeholder details
 const jobListings = [
-  { 
-    id: 1, 
-    title: 'Software Engineer', 
-    company: 'Tech Solutions Inc.', 
-    location: 'Bengaluru, India', 
-    type: 'Full-time', 
-    tags: ['Trending', 'Java', 'Python'], 
-    postedDate: '2 days ago', 
-    batchYear: '2024', 
+  {
+    id: 1,
+    title: 'Software Engineer',
+    company: 'Tech Solutions Inc.',
+    location: 'Bengaluru, India',
+    type: 'Full-time',
+    tags: ['Trending', 'Java', 'Python'],
+    postedDate: '2 days ago',
+    batchYear: '2024',
     experienceLevel: 'Fresher',
     applyLink: 'https://example.com/apply/techsolutions-se',
     description: 'Join our dynamic team of software engineers to build cutting-edge applications. You will be responsible for designing, developing, and maintaining software solutions.',
@@ -30,99 +30,197 @@ const jobListings = [
     previousQuestions: [
       { type: 'Coding', question: 'Find the duplicate number in an array of N+1 integers.' },
       { type: 'System Design', question: 'Design a URL shortening service like TinyURL.' },
-      { type: 'CS Fundamentals', question: 'Explain the difference between TCP and UDP.'}
+      { type: 'CS Fundamentals', question: 'Explain the difference between TCP and UDP.' }
     ]
   },
-  { 
-    id: 2, 
-    title: 'Data Analyst', 
-    company: 'Analytics Co.', 
-    location: 'Remote', 
-    type: 'Contract', 
-    tags: ['Remote', 'SQL', 'Tableau'], 
-    postedDate: '5 days ago', 
-    batchYear: '2023', 
-    experienceLevel: 'Experienced',
-    applyLink: 'https://example.com/apply/analytics-da',
-    description: 'We are looking for a skilled Data Analyst to interpret data, analyze results using statistical techniques and provide ongoing reports.',
-    hiringPattern: [
-      { stage: 'Resume Screening', details: 'Based on experience and skills.' },
-      { stage: 'Technical Assessment', details: 'SQL queries and case study.' },
-      { stage: 'Managerial Interview', details: 'Problem-solving and project experience.' }
-    ],
-    previousQuestions: [
-      { type: 'SQL', question: 'Write a query to find the second highest salary.' },
-      { type: 'Case Study', question: 'Analyze sales data to identify trends for a retail company.'}
-    ]
-  },
-  { 
-    id: 3, 
-    title: 'Product Manager', 
-    company: 'Innovate Ltd.', 
-    location: 'Hyderabad, India', 
-    type: 'Full-time', 
-    tags: ['Hot', 'Management', 'Agile'], 
-    postedDate: '1 week ago', 
-    batchYear: '2022', 
-    experienceLevel: 'Experienced',
-    applyLink: 'https://example.com/apply/innovate-pm',
-    description: 'Lead the ideation, technical development, and launch of innovative products. Define product strategy and roadmap.',
-    hiringPattern: [
-      { stage: 'Application Review', details: 'Portfolio and experience check.' },
-      { stage: 'Product Sense Interview', details: 'Case studies on product design and strategy.' },
-      { stage: 'Leadership Interview', details: 'Behavioral and situational questions.' }
-    ],
-    previousQuestions: [
-      { type: 'Product Design', question: 'How would you improve Instagram Reels?' },
-      { type: 'Strategy', question: 'Develop a go-to-market strategy for a new SaaS product.'}
-    ]
-  },
-  { 
-    id: 4, 
-    title: 'Frontend Developer Intern', 
-    company: 'Web Wizards', 
-    location: 'Pune, India', 
-    type: 'Internship', 
-    tags: ['React', 'JavaScript'], 
-    postedDate: '3 days ago', 
-    batchYear: '2025', 
+  {
+    id: 2,
+    title: 'Software Development Engineer Backend Intern',
+    company: 'JUSPAY',
+    location: 'India (Remote/Onsite not specified)',
+    type: 'Internship',
+    tags: ['Backend', '2025', '2026'],
+    postedDate: 'Just Now',
+    batchYear: '2025/2026',
     experienceLevel: 'Internship',
-    applyLink: 'https://example.com/apply/webwizards-intern',
-    description: 'Exciting internship opportunity for aspiring frontend developers. Work on real-world projects and learn from experienced mentors.',
+    applyLink: 'https://unstop.com/internships/software-development-engineer-backend-internship-juspay-1493182?utm_source=DotAware&utm_medium=Affiliates&utm_campaign=JUSPAY06062025&ref=AffDAW',
+    description: 'Join JUSPAY as a Backend Intern and build scalable backend systems. Hands-on coding opportunity with monthly pay of 50k–1L.',
     hiringPattern: [
-      { stage: 'Online Coding Challenge', details: 'Basic JavaScript and React questions.' },
-      { stage: 'Technical Interview', details: 'Discussion on projects and frontend concepts.' }
+      { stage: 'Online Coding', details: 'Backend-focused coding challenge.' },
+      { stage: 'Technical Interview', details: 'Core backend systems and problem solving.' }
     ],
     previousQuestions: [
-      { type: 'JavaScript', question: 'Explain event delegation in JavaScript.' },
-      { type: 'React', question: 'What are React Hooks? Give an example.'}
+      { type: 'Backend', question: 'Build a RESTful API for an e-commerce cart system.' }
     ]
   },
-  { 
-    id: 5, 
-    title: 'Qualcomm Associate Engineer (Connectivity)', 
-    company: 'Qualcomm', 
-    location: 'Multiple Locations, India', 
-    type: 'Full-time', 
-    tags: ['2025 Batch', 'C++', 'Embedded'], 
-    postedDate: 'Just Now', 
-    batchYear: '2025', 
+  {
+    id: 3,
+    title: 'Data Scientist',
+    company: 'Ericsson',
+    location: 'India (Remote/Hybrid)',
+    type: 'Full-time',
+    tags: ['Data Science', 'Experienced'],
+    postedDate: 'Recently',
+    batchYear: '2022+',
+    experienceLevel: 'Experienced (1+ years)',
+    applyLink: 'https://unstop.com/jobs/data-scientist-ericsson-1496800?utm_source=DotAware&utm_medium=Affiliates&utm_campaign=ERICSSON05062025&ref=AffDAW',
+    description: 'Work with Ericsson to drive insights from large datasets. Requires strong experience in data modeling, ML, and statistics.',
+    hiringPattern: [
+      { stage: 'Resume Shortlisting', details: 'Based on experience in ML and data analysis.' },
+      { stage: 'Technical Interview', details: 'Deep-dive on data projects and technical skills.' },
+      { stage: 'HR Interview', details: 'Work culture fit and behavioral questions.' }
+    ],
+    previousQuestions: [
+      { type: 'ML', question: 'Explain overfitting and how to prevent it.' },
+      { type: 'Data', question: 'How do you deal with missing data in a dataset?' }
+    ]
+  },
+  {
+    id: 4,
+    title: 'Frontend Web Developer Intern',
+    company: 'Zuddl',
+    location: 'India (Remote)',
+    type: 'Internship',
+    tags: ['Frontend', 'React', 'JavaScript'],
+    postedDate: 'Recently',
+    batchYear: '2024/2025',
+    experienceLevel: 'Internship (0–2 years)',
+    applyLink: 'https://zuddl.keka.com/careers/jobdetails/87137',
+    description: 'Join Zuddl as a frontend intern. Work on high-impact UI and learn from top engineers.',
+    hiringPattern: [
+      { stage: 'Resume Screening', details: 'Portfolio check and basic HTML/CSS evaluation.' },
+      { stage: 'Technical Round', details: 'React, JavaScript, and web design principles.' }
+    ],
+    previousQuestions: [
+      { type: 'React', question: 'What are controlled vs uncontrolled components?' }
+    ]
+  },
+  {
+    id: 5,
+    title: 'Software Engineer',
+    company: 'ANZ',
+    location: 'Bengaluru, India',
+    type: 'Full-time',
+    tags: ['2023', '2024', 'Java'],
+    postedDate: 'Just Now',
+    batchYear: '2023/2024',
+    experienceLevel: '0-2 years',
+    applyLink: 'https://careers.anz.com/job/Bengaluru-Software-Engineer/1210214001/',
+    description: 'Work with ANZ on enterprise software solutions. Expect work on backend, APIs, and financial services tools.',
+    hiringPattern: [
+      { stage: 'Technical Test', details: 'Coding + MCQ on Java, Data Structures.' },
+      { stage: 'Technical Interview', details: 'Project discussion, Java and OOPs.' },
+      { stage: 'HR Round', details: 'Behavioral and company fit.' }
+    ],
+    previousQuestions: [
+      { type: 'Java', question: 'Explain inheritance and encapsulation with real examples.' }
+    ]
+  },
+  {
+    id: 6,
+    title: 'QA Engineer',
+    company: 'Zoho Corp',
+    location: 'India (TBD)',
+    type: 'Full-time',
+    tags: ['QA', 'Testing', '2024', '2025'],
+    postedDate: 'Today',
+    batchYear: '2024/2025',
+    experienceLevel: 'Entry',
+    applyLink: 'https://careers.zohocorp.com/jobs/Careers/2803000614913581/QA-Engineers?source=CareerSite&utm_source=QA_Engineer_unstop&utm_medium=listing&utm_campaign=unstop',
+    description: 'Join Zoho as a QA Engineer to build and execute test plans for a variety of web and mobile applications.',
+    hiringPattern: [
+      { stage: 'Written Test', details: 'Aptitude and basic programming questions.' },
+      { stage: 'Interview', details: 'Manual testing and QA scenarios.' }
+    ],
+    previousQuestions: [
+      { type: 'Testing', question: 'What is regression testing?' },
+      { type: 'Scenario', question: 'How do you test an ATM machine?' }
+    ]
+  }
+,
+  {
+    id: 7,
+    title: 'Graduate Engineer Trainee',
+    company: 'HCL Technologies',
+    location: 'Multiple Locations, India',
+    type: 'Full-time',
+    tags: ['CSE', 'EEE', 'ECE', 'IT', '2025'],
+    postedDate: 'Today',
+    batchYear: '2025',
     experienceLevel: 'Fresher',
-    applyLink: 'https://careers.qualcomm.com/careers/job/446700670232?source=APPLICANT_SOURCE-6-104',
-    description: 'Qualcomm is hiring for their 2025 batch! This role involves working on connectivity technologies. Strong C/C++ and problem-solving skills required.',
+    applyLink: 'https://freshers.hcltech.com/?utm_source=OffCampus&utm_medium=LinkedIn&utm_campaign=FY26',
+    description: 'HCL is hiring 2025 batch graduates across CSE, EEE, ECE, IT disciplines with a minimum of 65% marks.',
     hiringPattern: [
-      { stage: 'Online Test', details: 'Aptitude, Technical MCQs (C, C++, OS, Networks), 2 Coding Questions.' },
-      { stage: 'Technical Interview 1', details: 'Focus on C/C++, Data Structures, Algorithms, OS, Computer Networks.' },
-      { stage: 'Technical Interview 2 (Optional)', details: 'Deeper dive into technical concepts and projects.' },
-      { stage: 'HR Interview', details: 'Behavioral questions and cultural fit.' }
+      { stage: 'Online Assessment', details: 'Aptitude and technical MCQs.' },
+      { stage: 'Interview', details: 'Technical and HR rounds.' }
     ],
     previousQuestions: [
-      { type: 'Coding', question: 'Reverse a linked list.' },
-      { type: 'C++', question: 'Explain virtual functions and polymorphism.' },
-      { type: 'OS', question: 'What is a deadlock? How can it be prevented?' }
+      { type: 'Aptitude', question: 'Time and Work related problem.' },
+      { type: 'Technical', question: 'Basic C and DBMS questions.' }
     ]
   },
+  {
+    id: 8,
+    title: 'Full Stack Developer',
+    company: 'Digantara',
+    location: 'Bangalore, India',
+    type: 'Full-time',
+    tags: ['Full Stack', '2021', '2022', '2023'],
+    postedDate: 'Today',
+    batchYear: '2021/2022/2023',
+    experienceLevel: 'Fresher',
+    applyLink: 'https://careers.kula.ai/digantara/5917?applicant_guid=db47e0fb-cb17-42f7-a115-e3614650448a',
+    description: 'Digantara is hiring Full Stack Developers for recent graduates to work on cutting-edge aerospace analytics products.',
+    hiringPattern: [
+      { stage: 'Application Review', details: 'Resume and profile evaluation.' },
+      { stage: 'Technical Interview', details: 'Full stack development concepts and coding tasks.' }
+    ],
+    previousQuestions: [
+      { type: 'Full Stack', question: 'Create a MERN stack application for task tracking.' }
+    ]
+  },
+  {
+    id: 9,
+    title: 'Entry Level Manager',
+    company: 'ICICI Bank',
+    location: 'India',
+    type: 'Full-time',
+    tags: ['Banking', 'Entry Level', '2024'],
+    postedDate: 'Today',
+    batchYear: '2024',
+    experienceLevel: 'Fresher',
+    applyLink: 'https://www.icicicareers.com/CareerApplicant/Career/job-details/2547189',
+    description: 'ICICI Bank is hiring for entry-level managers with 2-month training at 18k/month followed by a package of 4.5–5 LPA.',
+    hiringPattern: [
+      { stage: 'Online Test', details: 'Aptitude and reasoning.' },
+      { stage: 'Face-to-Face Interview', details: 'Behavioral and scenario-based questions.' }
+    ],
+    previousQuestions: [
+      { type: 'Reasoning', question: 'Puzzle-based reasoning questions.' }
+    ]
+  },
+  {
+    id: 10,
+    title: 'Data Scientist',
+    company: 'IBM',
+    location: 'Bangalore, India',
+    type: 'Full-time',
+    tags: ['Data Science', '2021', '2025'],
+    postedDate: 'Today',
+    batchYear: '2021–2025',
+    experienceLevel: 'Fresher/Experienced',
+    applyLink: 'https://ibmglobal.avature.net/en_US/careers/JobDetail?jobId=36746&source=SN_LinkedIn',
+    description: 'IBM is hiring Data Scientists across batches. Candidates with passion for AI, statistics, and data analysis are welcome.',
+    hiringPattern: [
+      { stage: 'Online Assessment', details: 'Data science and ML concepts.' },
+      { stage: 'Interview', details: 'Problem-solving and case-based discussion.' }
+    ],
+    previousQuestions: [
+      { type: 'ML', question: 'How do you evaluate a classification model?' }
+    ]
+  }
 ];
+
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
