@@ -10,29 +10,30 @@ import { motion } from 'framer-motion';
 // Enhanced job listings with applyLink and placeholder details
 const jobListings = [
   {
-    id: 1,
-    title: 'Software Engineer',
-    company: 'Tech Solutions Inc.',
-    location: 'Bengaluru, India',
-    type: 'Full-time',
-    tags: ['Trending', 'Java', 'Python'],
-    postedDate: '2 days ago',
-    batchYear: '2024',
-    experienceLevel: 'Fresher',
-    applyLink: 'https://example.com/apply/techsolutions-se',
-    description: 'Join our dynamic team of software engineers to build cutting-edge applications. You will be responsible for designing, developing, and maintaining software solutions.',
-    hiringPattern: [
-      { stage: 'Online Assessment', details: 'Coding test (2 questions) + MCQs on CS fundamentals.' },
-      { stage: 'Technical Interview 1', details: 'Focus on Data Structures & Algorithms, Problem Solving.' },
-      { stage: 'Technical Interview 2', details: 'System Design concepts, Project discussions.' },
-      { stage: 'HR Interview', details: 'Behavioral questions, Cultural fit.' }
-    ],
-    previousQuestions: [
-      { type: 'Coding', question: 'Find the duplicate number in an array of N+1 integers.' },
-      { type: 'System Design', question: 'Design a URL shortening service like TinyURL.' },
-      { type: 'CS Fundamentals', question: 'Explain the difference between TCP and UDP.' }
-    ]
-  },
+  id: 1,
+  title: 'Associate Software Engineer',
+  company: 'Zowork',
+  location: 'Remote',
+  type: 'Full-time',
+  tags: ['JavaScript', 'React.js', 'Node.js', 'MongoDB', 'PostgreSQL'],
+  postedDate: 'Recently',
+  batchYear: '2023/2024',
+  experienceLevel: '0–2 years',
+  applyLink: 'https://forms.clickup.com/37449591/f/13pvvq-19656/QIVKNT673KC6GD1NPB',
+  description: 'Zowork is hiring passionate software engineers for frontend and backend roles. Whether you’re a fresher or have up to 2 years of experience, this is your chance to work with global product teams in a growth-driven environment.',
+  hiringPattern: [
+    { stage: 'Application Screening', details: 'Submit academic scores (X, XII, B.Tech) and resume for evaluation.' },
+    { stage: 'Technical Interview 1', details: 'Coding and problem-solving based on JavaScript, React.js, Node.js.' },
+    { stage: 'Technical Interview 2', details: 'Discussion on previous projects, debugging tasks, and technical understanding.' },
+    { stage: 'HR Interview', details: 'Behavioral questions and cultural fit assessment.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Build a basic CRUD app using React and Node.js.' },
+    { type: 'Debugging', question: 'Fix bugs in a REST API endpoint built with Express.js.' },
+    { type: 'CS Fundamentals', question: 'Explain how Git works and how you would resolve a merge conflict.' }
+  ]
+}
+,
   {
     id: 2,
     title: 'Software Development Engineer Backend Intern',
@@ -218,7 +219,130 @@ const jobListings = [
     previousQuestions: [
       { type: 'ML', question: 'How do you evaluate a classification model?' }
     ]
-  }
+  },
+  {
+  id: 11,
+  title: 'UI Developer - Associate - Software Engineering',
+  company: 'Morgan Stanley',
+  location: 'Bengaluru, India',
+  type: 'Full-time',
+  tags: ['Angular', 'Java', 'Spring', 'Microservices', 'Kafka', 'REST APIs'],
+  postedDate: '2 days ago',
+  batchYear: '2023/2024',
+  experienceLevel: '0–2 years',
+  applyLink: 'https://ms.wd5.myworkdayjobs.com/en-US/External/job/UI-Developer---Associate---Software-Engineering_PT-JR013406',
+  description: 'Morgan Stanley is hiring a UI Developer (Associate level) for Institutional Securities Technology. Candidates will contribute to high-quality engineering solutions across UI and backend layers, using Angular, Java, Spring, REST, Kafka, and modern DevOps tools.',
+  hiringPattern: [
+    { stage: 'Resume Screening', details: 'Shortlisting based on technical skillset and relevant experience.' },
+    { stage: 'Online Technical Round', details: 'Coding + technical MCQs on Java, Angular, System Design.' },
+    { stage: 'Technical Interviews (2 Rounds)', details: 'Project discussions, OOPs, DSA, system architecture.' },
+    { stage: 'HR Interview', details: 'Behavioral questions, cultural fit, career growth alignment.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Implement a real-time data dashboard using Angular and REST APIs.' },
+    { type: 'System Design', question: 'Design a scalable notification service using Kafka and microservices.' },
+    { type: 'CS Fundamentals', question: 'Explain the use of dependency injection in Spring.' }
+  ]
+},
+{
+  id: 12,
+  title: 'Intern - AI/ML',
+  company: 'DP World',
+  location: 'Bangalore, India',
+  type: 'Full-time',
+  tags: ['Trending', 'Python', 'Machine Learning', 'TensorFlow', 'PyTorch', 'SQL'],
+  postedDate: '2 days ago',
+  batchYear: '2024/2025/2026',
+  experienceLevel: 'Internship',
+  applyLink: 'https://ehpv.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/17720',
+  description: 'DP World is hiring AI/ML Interns to work with cross-functional teams on real-world ML problems. Interns will research, build, and deploy machine learning models while gaining hands-on experience with data, cloud platforms, and MLOps tools.',
+  hiringPattern: [
+    { stage: 'Resume Shortlisting', details: 'Profile and project-based screening with a focus on ML skills.' },
+    { stage: 'Online Assessment', details: 'Python + ML basics + problem-solving scenarios.' },
+    { stage: 'Technical Interview', details: 'ML algorithms, past projects, cloud tools, and coding questions.' },
+    { stage: 'HR Interview', details: 'Internship expectations, availability, and cultural fit.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Implement a linear regression model from scratch in Python.' },
+    { type: 'ML Theory', question: 'Explain overfitting and how to prevent it in deep learning models.' },
+    { type: 'Tools', question: 'Describe how MLflow helps in model deployment and monitoring.' }
+  ]
+},{
+  id: 13,
+  title: 'Data Science Intern',
+  company: 'GE Aerospace',
+  location: 'Bengaluru, India',
+  type: 'Full-time',
+  tags: ['NLP', 'LLMs', 'Python', 'Flask', 'HuggingFace', 'AWS', 'React'],
+  postedDate: '06/02/2025',
+  batchYear: '2026/2027',
+  experienceLevel: 'Internship',
+  applyLink: 'https://careers.geaerospace.com/global/en/apply?jobSeqNo=GAOGAYGLOBALR5010969EXTERNALENGLOBAL&step=1&stepname=personalInformation',
+  description: 'GE Aerospace is hiring Data Science Interns to work on Natural Language Processing (NLP), Large Language Models (LLMs), and agentic AI systems. Interns will contribute to designing scalable AI software solutions in a collaborative tech environment.',
+  hiringPattern: [
+    { stage: 'Resume Shortlisting', details: 'Based on academic background and relevant AI/ML/NLP experience.' },
+    { stage: 'Online Assessment', details: 'Coding challenges and questions on AI, NLP, and Python.' },
+    { stage: 'Technical Interview', details: 'Discussion on past projects, frameworks (Flask/React), and NLP use cases.' },
+    { stage: 'HR Interview', details: 'Culture fit and communication assessment.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Build a REST API using Flask to serve predictions from a trained NLP model.' },
+    { type: 'AI/ML', question: 'Explain the difference between fine-tuning and pre-training in LLMs.' },
+    { type: 'Tools & Deployment', question: 'How would you deploy a Transformer model on AWS?' }
+  ]
+},{
+  id: 14,
+  title: 'Graduate Engineer Trainee - Cybersecurity',
+  company: 'Emerson',
+  location: 'Pune, Maharashtra, India (Hybrid)',
+  type: 'Full-time',
+  tags: ['Trending', 'Cybersecurity', 'Penetration Testing', 'Python', 'Kali Linux', 'OWASP'],
+  postedDate: 'Recently',
+  batchYear: '2024/2025',
+  experienceLevel: 'Fresher',
+  applyLink: 'https://ehpv.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/17720/apply/email',
+  description: 'Emerson is hiring Graduate Engineer Trainees for its cybersecurity team in Pune. You will work with global product security groups performing vulnerability analysis, pen testing, and protocol fuzzing on critical infrastructure applications.',
+  hiringPattern: [
+    { stage: 'Resume Screening', details: 'Shortlisting based on academic background and cybersecurity exposure.' },
+    { stage: 'Technical Assessment', details: 'MCQs + practical test on penetration testing tools and security protocols.' },
+    { stage: 'Technical Interview', details: 'Deep dive into cybersecurity concepts, tools (e.g., Burp Suite, Kali), and vulnerability mitigation.' },
+    { stage: 'HR Interview', details: 'Cultural fit, career aspirations, and communication assessment.' }
+  ],
+  previousQuestions: [
+    { type: 'Cybersecurity Tools', question: 'Explain how you would use Burp Suite to test for injection vulnerabilities in a web app.' },
+    { type: 'Protocol Knowledge', question: 'What’s the difference between HTTPS and TLS? Why is each important?' },
+    { type: 'Scenario-based', question: 'A mobile app has failed an OWASP Top 10 test for insecure communication. How would you approach fixing it?' }
+  ]
+},
+{
+  id: 15,
+  title: 'Associate Software Engineer',
+  company: 'Alegeus',
+  location: 'Bangalore, India',
+  type: 'Full-time',
+  tags: ['Fintech', 'Healthtech', 'Java', 'Cloud', 'SQL'],
+  postedDate: '24 days ago',
+  batchYear: '2023/2024',
+  experienceLevel: '0–2 years',
+  applyLink: 'https://alegeus.wd1.myworkdayjobs.com/en-US/Alegeus_External_Careers/job/Bangalore---India/Associate-Software-Engineer_R-100903/apply/',
+  description: 'Alegeus is hiring Associate Software Engineers to work on next-gen fintech and healthtech solutions. You will join a fast-paced, growth-driven team that values innovation, collaboration, and personal development.',
+  hiringPattern: [
+    { stage: 'Resume Shortlisting', details: 'Profile review focusing on Java, SQL, and system design basics.' },
+    { stage: 'Online Assessment', details: 'Coding problems and scenario-based tech MCQs.' },
+    { stage: 'Technical Interview(s)', details: 'Covers backend development, system thinking, and teamwork scenarios.' },
+    { stage: 'HR Interview', details: 'Discusses aspirations, company culture fit, and compensation expectations.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Build a RESTful API using Java and explain your approach.' },
+    { type: 'SQL', question: 'Write a query to find the second highest salary from an employee table.' },
+    { type: 'System Design', question: 'How would you design a scalable appointment booking system?' }
+  ]
+},
+
+
+
+
+
 ];
 
 
