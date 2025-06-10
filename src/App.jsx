@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import ReactGA from "react-ga4";
 import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import HomePage from '@/pages/HomePage';
@@ -8,8 +9,16 @@ import JobsPage from '@/pages/JobsPage';
 import JobDetailPage from '@/pages/JobDetailPage'; // Import the new page
 import { Toaster } from '@/components/ui/toaster';
 
+// Initialize GA4
+ReactGA.initialize("G-LXKK0Y976M");
+
 const PageWrapper = ({ children }) => {
   const location = useLocation();
+  // Track page views
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
   return (
     <motion.div
       key={location.pathname}

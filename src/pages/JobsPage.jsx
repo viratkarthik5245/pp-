@@ -9,219 +9,9 @@ import { motion } from 'framer-motion';
 
 // Enhanced job listings with applyLink and placeholder details
 const jobListings = [
+ 
   {
   id: 1,
-  title: 'Associate Software Engineer',
-  company: 'Zowork',
-  location: 'Remote',
-  type: 'Full-time',
-  tags: ['JavaScript', 'React.js', 'Node.js', 'MongoDB', 'PostgreSQL'],
-  postedDate: 'Recently',
-  batchYear: '2023/2024',
-  experienceLevel: '0–2 years',
-  applyLink: 'https://forms.clickup.com/37449591/f/13pvvq-19656/QIVKNT673KC6GD1NPB',
-  description: 'Zowork is hiring passionate software engineers for frontend and backend roles. Whether you’re a fresher or have up to 2 years of experience, this is your chance to work with global product teams in a growth-driven environment.',
-  hiringPattern: [
-    { stage: 'Application Screening', details: 'Submit academic scores (X, XII, B.Tech) and resume for evaluation.' },
-    { stage: 'Technical Interview 1', details: 'Coding and problem-solving based on JavaScript, React.js, Node.js.' },
-    { stage: 'Technical Interview 2', details: 'Discussion on previous projects, debugging tasks, and technical understanding.' },
-    { stage: 'HR Interview', details: 'Behavioral questions and cultural fit assessment.' }
-  ],
-  previousQuestions: [
-    { type: 'Coding', question: 'Build a basic CRUD app using React and Node.js.' },
-    { type: 'Debugging', question: 'Fix bugs in a REST API endpoint built with Express.js.' },
-    { type: 'CS Fundamentals', question: 'Explain how Git works and how you would resolve a merge conflict.' }
-  ]
-}
-,
-  {
-    id: 2,
-    title: 'Software Development Engineer Backend Intern',
-    company: 'JUSPAY',
-    location: 'India (Remote/Onsite not specified)',
-    type: 'Internship',
-    tags: ['Backend', '2025', '2026'],
-    postedDate: 'Just Now',
-    batchYear: '2025/2026',
-    experienceLevel: 'Internship',
-    applyLink: 'https://unstop.com/internships/software-development-engineer-backend-internship-juspay-1493182?utm_source=DotAware&utm_medium=Affiliates&utm_campaign=JUSPAY06062025&ref=AffDAW',
-    description: 'Join JUSPAY as a Backend Intern and build scalable backend systems. Hands-on coding opportunity with monthly pay of 50k–1L.',
-    hiringPattern: [
-      { stage: 'Online Coding', details: 'Backend-focused coding challenge.' },
-      { stage: 'Technical Interview', details: 'Core backend systems and problem solving.' }
-    ],
-    previousQuestions: [
-      { type: 'Backend', question: 'Build a RESTful API for an e-commerce cart system.' }
-    ]
-  },
-  {
-    id: 3,
-    title: 'Data Scientist',
-    company: 'Ericsson',
-    location: 'India (Remote/Hybrid)',
-    type: 'Full-time',
-    tags: ['Data Science', 'Experienced'],
-    postedDate: 'Recently',
-    batchYear: '2022+',
-    experienceLevel: 'Experienced (1+ years)',
-    applyLink: 'https://unstop.com/jobs/data-scientist-ericsson-1496800?utm_source=DotAware&utm_medium=Affiliates&utm_campaign=ERICSSON05062025&ref=AffDAW',
-    description: 'Work with Ericsson to drive insights from large datasets. Requires strong experience in data modeling, ML, and statistics.',
-    hiringPattern: [
-      { stage: 'Resume Shortlisting', details: 'Based on experience in ML and data analysis.' },
-      { stage: 'Technical Interview', details: 'Deep-dive on data projects and technical skills.' },
-      { stage: 'HR Interview', details: 'Work culture fit and behavioral questions.' }
-    ],
-    previousQuestions: [
-      { type: 'ML', question: 'Explain overfitting and how to prevent it.' },
-      { type: 'Data', question: 'How do you deal with missing data in a dataset?' }
-    ]
-  },
-  {
-    id: 4,
-    title: 'Frontend Web Developer Intern',
-    company: 'Zuddl',
-    location: 'India (Remote)',
-    type: 'Internship',
-    tags: ['Frontend', 'React', 'JavaScript'],
-    postedDate: 'Recently',
-    batchYear: '2024/2025',
-    experienceLevel: 'Internship (0–2 years)',
-    applyLink: 'https://zuddl.keka.com/careers/jobdetails/87137',
-    description: 'Join Zuddl as a frontend intern. Work on high-impact UI and learn from top engineers.',
-    hiringPattern: [
-      { stage: 'Resume Screening', details: 'Portfolio check and basic HTML/CSS evaluation.' },
-      { stage: 'Technical Round', details: 'React, JavaScript, and web design principles.' }
-    ],
-    previousQuestions: [
-      { type: 'React', question: 'What are controlled vs uncontrolled components?' }
-    ]
-  },
-  {
-    id: 5,
-    title: 'Software Engineer',
-    company: 'ANZ',
-    location: 'Bengaluru, India',
-    type: 'Full-time',
-    tags: ['2023', '2024', 'Java'],
-    postedDate: 'Just Now',
-    batchYear: '2023/2024',
-    experienceLevel: '0-2 years',
-    applyLink: 'https://careers.anz.com/job/Bengaluru-Software-Engineer/1210214001/',
-    description: 'Work with ANZ on enterprise software solutions. Expect work on backend, APIs, and financial services tools.',
-    hiringPattern: [
-      { stage: 'Technical Test', details: 'Coding + MCQ on Java, Data Structures.' },
-      { stage: 'Technical Interview', details: 'Project discussion, Java and OOPs.' },
-      { stage: 'HR Round', details: 'Behavioral and company fit.' }
-    ],
-    previousQuestions: [
-      { type: 'Java', question: 'Explain inheritance and encapsulation with real examples.' }
-    ]
-  },
-  {
-    id: 6,
-    title: 'QA Engineer',
-    company: 'Zoho Corp',
-    location: 'India (TBD)',
-    type: 'Full-time',
-    tags: ['QA', 'Testing', '2024', '2025'],
-    postedDate: 'Today',
-    batchYear: '2024/2025',
-    experienceLevel: 'Entry',
-    applyLink: 'https://careers.zohocorp.com/jobs/Careers/2803000614913581/QA-Engineers?source=CareerSite&utm_source=QA_Engineer_unstop&utm_medium=listing&utm_campaign=unstop',
-    description: 'Join Zoho as a QA Engineer to build and execute test plans for a variety of web and mobile applications.',
-    hiringPattern: [
-      { stage: 'Written Test', details: 'Aptitude and basic programming questions.' },
-      { stage: 'Interview', details: 'Manual testing and QA scenarios.' }
-    ],
-    previousQuestions: [
-      { type: 'Testing', question: 'What is regression testing?' },
-      { type: 'Scenario', question: 'How do you test an ATM machine?' }
-    ]
-  }
-,
-  {
-    id: 7,
-    title: 'Graduate Engineer Trainee',
-    company: 'HCL Technologies',
-    location: 'Multiple Locations, India',
-    type: 'Full-time',
-    tags: ['CSE', 'EEE', 'ECE', 'IT', '2025'],
-    postedDate: 'Today',
-    batchYear: '2025',
-    experienceLevel: 'Fresher',
-    applyLink: 'https://freshers.hcltech.com/?utm_source=OffCampus&utm_medium=LinkedIn&utm_campaign=FY26',
-    description: 'HCL is hiring 2025 batch graduates across CSE, EEE, ECE, IT disciplines with a minimum of 65% marks.',
-    hiringPattern: [
-      { stage: 'Online Assessment', details: 'Aptitude and technical MCQs.' },
-      { stage: 'Interview', details: 'Technical and HR rounds.' }
-    ],
-    previousQuestions: [
-      { type: 'Aptitude', question: 'Time and Work related problem.' },
-      { type: 'Technical', question: 'Basic C and DBMS questions.' }
-    ]
-  },
-  {
-    id: 8,
-    title: 'Full Stack Developer',
-    company: 'Digantara',
-    location: 'Bangalore, India',
-    type: 'Full-time',
-    tags: ['Full Stack', '2021', '2022', '2023'],
-    postedDate: 'Today',
-    batchYear: '2021/2022/2023',
-    experienceLevel: 'Fresher',
-    applyLink: 'https://careers.kula.ai/digantara/5917?applicant_guid=db47e0fb-cb17-42f7-a115-e3614650448a',
-    description: 'Digantara is hiring Full Stack Developers for recent graduates to work on cutting-edge aerospace analytics products.',
-    hiringPattern: [
-      { stage: 'Application Review', details: 'Resume and profile evaluation.' },
-      { stage: 'Technical Interview', details: 'Full stack development concepts and coding tasks.' }
-    ],
-    previousQuestions: [
-      { type: 'Full Stack', question: 'Create a MERN stack application for task tracking.' }
-    ]
-  },
-  {
-    id: 9,
-    title: 'Entry Level Manager',
-    company: 'ICICI Bank',
-    location: 'India',
-    type: 'Full-time',
-    tags: ['Banking', 'Entry Level', '2024'],
-    postedDate: 'Today',
-    batchYear: '2024',
-    experienceLevel: 'Fresher',
-    applyLink: 'https://www.icicicareers.com/CareerApplicant/Career/job-details/2547189',
-    description: 'ICICI Bank is hiring for entry-level managers with 2-month training at 18k/month followed by a package of 4.5–5 LPA.',
-    hiringPattern: [
-      { stage: 'Online Test', details: 'Aptitude and reasoning.' },
-      { stage: 'Face-to-Face Interview', details: 'Behavioral and scenario-based questions.' }
-    ],
-    previousQuestions: [
-      { type: 'Reasoning', question: 'Puzzle-based reasoning questions.' }
-    ]
-  },
-  {
-    id: 10,
-    title: 'Data Scientist',
-    company: 'IBM',
-    location: 'Bangalore, India',
-    type: 'Full-time',
-    tags: ['Data Science', '2021', '2025'],
-    postedDate: 'Today',
-    batchYear: '2021–2025',
-    experienceLevel: 'Fresher/Experienced',
-    applyLink: 'https://ibmglobal.avature.net/en_US/careers/JobDetail?jobId=36746&source=SN_LinkedIn',
-    description: 'IBM is hiring Data Scientists across batches. Candidates with passion for AI, statistics, and data analysis are welcome.',
-    hiringPattern: [
-      { stage: 'Online Assessment', details: 'Data science and ML concepts.' },
-      { stage: 'Interview', details: 'Problem-solving and case-based discussion.' }
-    ],
-    previousQuestions: [
-      { type: 'ML', question: 'How do you evaluate a classification model?' }
-    ]
-  },
-  {
-  id: 11,
   title: 'UI Developer - Associate - Software Engineering',
   company: 'Morgan Stanley',
   location: 'Bengaluru, India',
@@ -245,7 +35,7 @@ const jobListings = [
   ]
 },
 {
-  id: 12,
+  id: 2,
   title: 'Intern - AI/ML',
   company: 'DP World',
   location: 'Bangalore, India',
@@ -268,7 +58,7 @@ const jobListings = [
     { type: 'Tools', question: 'Describe how MLflow helps in model deployment and monitoring.' }
   ]
 },{
-  id: 13,
+  id: 3,
   title: 'Data Science Intern',
   company: 'GE Aerospace',
   location: 'Bengaluru, India',
@@ -291,7 +81,7 @@ const jobListings = [
     { type: 'Tools & Deployment', question: 'How would you deploy a Transformer model on AWS?' }
   ]
 },{
-  id: 14,
+  id: 4,
   title: 'Graduate Engineer Trainee - Cybersecurity',
   company: 'Emerson',
   location: 'Pune, Maharashtra, India (Hybrid)',
@@ -315,7 +105,7 @@ const jobListings = [
   ]
 },
 {
-  id: 15,
+  id: 5,
   title: 'Associate Software Engineer',
   company: 'Alegeus',
   location: 'Bangalore, India',
@@ -338,6 +128,280 @@ const jobListings = [
     { type: 'System Design', question: 'How would you design a scalable appointment booking system?' }
   ]
 },
+{
+  id: 6,
+  title: 'Software Engineer, University Graduate, 2026',
+  company: 'Google',
+  location: 'Bengaluru, Gurugram, Hyderabad, Mumbai, Pune (India)',
+  type: 'Full-time',
+  tags: ['C++', 'Java', 'Python', 'Machine Learning', 'Distributed Systems', 'Linux'],
+  postedDate: 'Recently',
+  batchYear: '2026',
+  experienceLevel: 'Fresher',
+  applyLink: 'https://www.google.com/about/careers/applications/apply/81ac8c68-5db4-4000-9d33-d6af86c6372a/form?src=Online',
+  description: 'Google is hiring Software Engineers from the 2026 batch to work on cutting-edge products in areas like AI, NLP, distributed systems, search, and large-scale infrastructure. You will be part of dynamic teams solving complex problems across the full stack.',
+  hiringPattern: [
+    { stage: 'Online Assessment', details: 'Coding test with algorithmic challenges in C++, Java, or Python.' },
+    { stage: 'Technical Interviews (2–3 Rounds)', details: 'Focus on DSA, systems design, and problem-solving.' },
+    { stage: 'Hiring Committee Review', details: 'Comprehensive evaluation of interview performance and fit.' },
+    { stage: 'Offer & Team Match', details: 'Based on preferences and hiring needs across teams and locations.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Given a large dataset, design an efficient way to process and retrieve top-k frequent elements.' },
+    { type: 'System Design', question: 'Design a distributed file system like Google File System.' },
+    { type: 'Machine Learning', question: 'Explain the trade-offs between model accuracy and latency in real-time prediction systems.' }
+  ]
+},
+{
+  id: 7,
+  title: 'Graduate Virtual Career Fair - Multiple Roles (Phase 6)',
+  company: 'Superset Varsity',
+  location: 'Bangalore, Chennai, Coimbatore, Hyderabad, Kochi, Kolkata, Pune, Mumbai',
+  type: 'Full-time',
+  tags: ['Technical Support', 'Software Support', 'Application Support', 'IT Operations'],
+  postedDate: 'Recently',
+  batchYear: '2023/2024',
+  experienceLevel: 'Fresher (3-Year Graduates)',
+  applyLink: 'https://app.joinsuperset.com/join/#/signup/student/jobprofiles/b157575c-64fa-44e3-a6d6-de6b3a6d68d1',
+  description: 'Superset Varsity is conducting a Graduate Virtual Career Fair (Phase 6) to hire for multiple technical roles across cities. This opportunity is open to 3-year graduates from batches 2023 and 2024.',
+  hiringPattern: [
+    { stage: 'Application Submission', details: 'Register and apply via Superset platform before June 13, 2025, 11:00 AM.' },
+    { stage: 'Online Assessment', details: 'Technical questions based on role applied (support/development).' },
+    { stage: 'Interview', details: 'Technical + HR round based on role shortlisted for.' }
+  ],
+  previousQuestions: [
+    { type: 'Support Scenario', question: 'How would you troubleshoot a web application not loading for a user?' },
+    { type: 'Database', question: 'Write a SQL query to fetch the 3rd highest salary from a table.' },
+    { type: 'IT Operations', question: 'What is the purpose of a runbook in system monitoring?' }
+  ]
+},
+{
+  id: 8,
+  title: 'Off-Campus Fresher Hiring Drive 2025',
+  company: 'NCS (a Singtel Group Company)',
+  location: 'India (Remote & IDC Offices)',
+  type: 'Full-time',
+  tags: ['IT Services', 'Cloud', 'Data', 'Cybersecurity', 'Digital Transformation'],
+  postedDate: 'Recently',
+  batchYear: '2025',
+  experienceLevel: 'Fresher',
+  applyLink: 'https://forms.cloud.microsoft/pages/responsepage.aspx?id=9diQymOJbku8qZrEaLzHqNxQYEspi3tPmcHfMEubmiVUMENQNjZVUjdMS0FaS0UzTDA5U09WTzMzNi4u',
+  description: 'NCS India, part of Singtel Group, is hiring fresh graduates as part of its 2025 off-campus drive. Join a global tech leader delivering solutions in cloud, digital, cybersecurity, application services, and infrastructure.',
+  hiringPattern: [
+    { stage: 'Registration', details: 'Apply via Microsoft or Google form provided.' },
+    { stage: 'Online Assessment', details: 'Evaluate technical aptitude and problem-solving ability.' },
+    { stage: 'Technical Interview', details: 'Assess knowledge in chosen tech domain and projects.' },
+    { stage: 'HR Interview', details: 'Final discussion on role, compensation, and cultural fit.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Write a function to validate an email address format using regular expressions.' },
+    { type: 'Cloud Concepts', question: 'Explain the differences between IaaS, PaaS, and SaaS.' },
+    { type: 'Behavioral', question: 'Describe a time you worked in a team to solve a technical challenge.' }
+  ]
+},
+{
+  id: 9,
+  title: 'Python Developer',
+  company: 'Wipro',
+  location: 'Hyderabad, India',
+  type: 'Full-time',
+  tags: ['Python', 'AI', 'Product Development', 'Security', 'Consulting'],
+  postedDate: 'Recently',
+  batchYear: '2021–2025',
+  experienceLevel: '0–3 years',
+  applyLink: 'https://careers.wipro.com/job/Hyderabad-Python-Developer-500032/1150794955/?feedId=420455&utm_source=Indeed&utm_medium=organic&utm_campaign=Indeed',
+  description: 'Wipro is hiring Python Developers to build AI-driven solutions and minimum viable products (MVPs) that address real-world business challenges. This role focuses on full-cycle development, from model creation to client interaction and solution deployment.',
+  hiringPattern: [
+    { stage: 'Application Submission', details: 'Apply online through Wipro Careers portal.' },
+    { stage: 'Online Assessment', details: 'Technical MCQs and Python coding round.' },
+    { stage: 'Technical Interview', details: 'Focus on AI solution design, Python skills, and business logic.' },
+    { stage: 'HR Interview', details: 'Cultural fit, salary discussion, and career aspirations.' }
+  ],
+  previousQuestions: [
+    { type: 'Coding', question: 'Write a Python function to detect anomalies in a time-series dataset.' },
+    { type: 'AI/ML', question: 'How would you build an AI recommendation engine for e-commerce?' },
+    { type: 'System Design', question: 'Design a scalable backend for a real-time chatbot application.' }
+  ]
+},
+ {
+    id: 10,
+    title: 'Software Engineer',
+    company: 'Mphasis',
+    location: 'Mumbai, India',
+    type: 'Full-time',
+    tags: ['Java', 'Python', 'Software Development'],
+    postedDate: '9 June 2025',
+    batchYear: '2021/2022/2023/2024',
+    experienceLevel: 'Fresher',
+    applyLink: 'https://mphasis.ripplehire.com/candidate/?token=B4UkLILwjQRHGDZ8Zziq&source=LINKEDINCAMPAIGNNEW&ref=LINKEDINCAMPAIGNNEW#detail/job/700042',
+    description: 'Mphasis is hiring Software Engineers for its Mumbai office. Ideal for recent graduates looking to build careers in software development.'
+  },
+  {
+    id: 11,
+    title: 'Frontend Developer',
+    company: 'Playo',
+    location: 'Bangalore, India',
+    type: 'Full-time',
+    tags: ['Frontend', 'JavaScript', 'React'],
+    postedDate: '9 June 2025',
+    batchYear: '2020/2021',
+    experienceLevel: 'Fresher/Junior',
+    applyLink: 'https://www.linkedin.com/jobs/view/4243295357',
+    description: 'Playo is hiring Frontend Developers skilled in React/JavaScript. A great opportunity to work on consumer-facing sports products.'
+  },
+  {
+    id: 12,
+    title: 'Software Engineer',
+    company: 'Crunchyroll',
+    location: 'Hyderabad, India',
+    type: 'Full-time',
+    tags: ['Backend', 'Web Development', 'Media'],
+    postedDate: '9 June 2025',
+    batchYear: '2021/2022/2023',
+    experienceLevel: '0–2 years',
+    applyLink: 'http://job-boards.greenhouse.io/crunchyroll/jobs/6696781?gh_jid=6696781&gh_src=16d404cd1us',
+    description: 'Crunchyroll is looking for Software Engineers to join its Hyderabad team. Work on global media streaming solutions.'
+  },
+  {
+    id: 13,
+    title: 'Data Engineer',
+    company: 'Visa',
+    location: 'Bangalore, India',
+    type: 'Full-time',
+    tags: ['Java', 'Python', 'Hadoop', 'Spark'],
+    postedDate: '9 June 2025',
+    batchYear: '2022/2023/2024',
+    experienceLevel: '0.5–1.5 years',
+    applyLink: 'https://jobs.smartrecruiters.com/Visa/744000063887675-data-engineer-0-5-1-5-years-of-experience-in-java-python-hadoop-spark-',
+    description: 'Visa is hiring Data Engineers to handle large-scale data pipelines and processing using Spark, Hadoop, and Python.'
+  },
+  {
+    id: 14,
+    title: 'Software Engineer',
+    company: 'Zunno AI',
+    location: 'Remote',
+    type: 'Full-time',
+    tags: ['AI', 'Remote', 'Software Engineer'],
+    postedDate: '9 June 2025',
+    batchYear: '2023/2024/2025',
+    experienceLevel: 'Fresher',
+    applyLink: 'https://www.linkedin.com/jobs/view/4244776727',
+    description: 'Zunno AI is hiring Software Engineers remotely to work on cutting-edge AI products. Ideal for new grads.'
+  },
+  {
+    id: 15,
+    title: 'Software Engineer',
+    company: 'PayNways Worldwide',
+    location: 'Noida, India',
+    type: 'Full-time',
+    tags: ['Software Engineer', 'Web', 'Java'],
+    postedDate: '9 June 2025',
+    batchYear: '2022/2023/2024',
+    experienceLevel: 'Fresher',
+    applyLink: 'https://www.linkedin.com/jobs/view/4111382303',
+    description: 'PayNways Worldwide is hiring Software Engineers in Noida. Suitable for graduates with a passion for coding and fintech.'
+  }
+  ,
+   {
+    id: 16,
+    title: 'UI Developer - Associate - Software Engineering',
+    company: 'Morgan Stanley',
+    location: 'Bengaluru, India',
+    type: 'Full-time',
+    tags: ['UI Development', 'JavaScript', 'Angular', 'System Design'],
+    postedDate: 'Recently',
+    batchYear: '2021 or earlier',
+    experienceLevel: '1+ years',
+    applyLink: 'https://ms.wd5.myworkdayjobs.com/External/job/Bengaluru-India/UI-Developer---Associate---Software-Engineering_PT-JR013406',
+    description: 'Morgan Stanley is hiring experienced UI Developers to build robust frontend solutions for enterprise software. Strong Angular and system design skills preferred.',
+    expectedSalary: '20–30 LPA'
+  },
+  {
+    id: 17,
+    title: 'Software Engineer - Integration',
+    company: 'Ontic',
+    location: 'India (Remote/Hybrid)',
+    type: 'Full-time',
+    tags: ['Integration', 'API', 'Software Engineering'],
+    postedDate: 'Recently',
+    batchYear: '2020–2024',
+    experienceLevel: '0–4 years',
+    applyLink: 'https://jobs.ashbyhq.com/Ontic/177a5937-0abf-4288-9b47-ffb0e71ef0b8?utm_source=QXeoneAMj6',
+    description: 'Ontic is hiring Software Engineers to work on integration tools and platforms, solving real-time system challenges.',
+    expectedSalary: '12–20 LPA'
+  },
+  {
+    id: 18,
+    title: 'Associate Software Engineer',
+    company: 'Alegeus',
+    location: 'Bangalore, India',
+    type: 'Full-time',
+    tags: ['Java', 'Backend', 'Cloud'],
+    postedDate: 'Recently',
+    batchYear: '2023',
+    experienceLevel: '1 year',
+    applyLink: 'https://alegeus.wd1.myworkdayjobs.com/Alegeus_External_Careers/job/Bangalore---India/Associate-Software-Engineer_R-100903',
+    description: 'Alegeus is looking for software engineers with backend and cloud knowledge to work on healthcare tech platforms.',
+    expectedSalary: '9–13 LPA'
+  },
+  {
+    id: 19,
+    title: 'Frontend Developer',
+    company: 'Ameriprise Financial Services, LLC',
+    location: 'India (likely remote/hybrid)',
+    type: 'Full-time',
+    tags: ['Frontend', 'React', 'Web Development'],
+    postedDate: 'Recently',
+    batchYear: '2023/2024',
+    experienceLevel: '0–1 year',
+    applyLink: 'https://www.linkedin.com/jobs/view/4245921972/',
+    description: 'Ameriprise is hiring junior frontend developers to build UI interfaces and web solutions using modern frontend stacks.',
+    expectedSalary: '4–8 LPA'
+  },
+  {
+  id: 20,
+  title: 'Off-Campus Drive 2025 – Software Engineer',
+  company: 'NCS Group',
+  location: 'India (Remote & IDC Offices)',
+  type: 'Full-time',
+  tags: ['CS', 'IT', 'Digital', 'Cloud', 'Software Engineering'],
+  postedDate: '9 June 2025',
+  batchYear: '2025',
+  experienceLevel: 'Fresher',
+  applyLink: 'https://forms.cloud.microsoft/pages/responsepage.aspx?id=9diQymOJbku8qZrEaLzHqNxQYEspi3tPmcHfMEubmiVUMENQNjZVUjdMS0FaS0UzTDA5U09WTzMzNi4u',
+  description: 'NCS Group is conducting an Off-Campus Drive for 2025 CS/IT graduates. Candidates must have 80% in 10th and 12th, and a minimum of 8.0 CGPA in BE/BTech. This is a great opportunity to join a global tech leader delivering end-to-end digital transformation solutions.',
+  hiringPattern: [
+    { stage: 'Eligibility Check', details: '10th/12th ≥ 80%, BE/BTech (CS/IT) ≥ 8.0 CGPA, 2025 batch only' },
+    { stage: 'Application Submission', details: 'Apply via Microsoft Form' },
+    { stage: 'Online Assessment', details: 'Technical & aptitude test' },
+    { stage: 'Technical Interview', details: 'Assessment of problem-solving and tech skills' },
+    { stage: 'HR Interview', details: 'Fitment and offer discussion' }
+  ],
+  previousQuestions: [
+    { type: 'Aptitude', question: 'Solve a series-based logical reasoning problem.' },
+    { type: 'Technical', question: 'Explain how you would design a login system with secure authentication.' },
+    { type: 'Behavioral', question: 'Describe a situation where you overcame a project challenge in a team.' }
+  ]
+},
+{
+  id: 21,
+  title: 'ML Data Associate I',
+  company: 'Amazon',
+  location: 'India (likely Hyderabad)',
+  type: 'Full-time',
+  tags: ['Data Annotation', 'Machine Learning', 'AI', 'Data Operations'],
+  postedDate: 'Recently',
+  batchYear: '2021–2024',
+  experienceLevel: '0–2 years',
+  applyLink: 'https://www.amazon.jobs/en/jobs/2997479/ml-data-associate-i',
+  description: 'Amazon is hiring ML Data Associates to help annotate and label speech and text data for training advanced ML models. This is a great opportunity to work at the intersection of data operations and AI.',
+  expectedSalary: 'Not Disclosed'
+}
+
+
+
+
+
 
 
 
